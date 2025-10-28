@@ -165,7 +165,7 @@ plot(Lake_Chemistry_ANOVA2)
 
 13. Is there a significant difference in mean temperature among the lakes? Report your findings. 
 
-> Answer: No there is not, this is obvious by the R-squared value in the lm version of the ANOVA which shows that different lakes only account for 4.1% of variability.
+> Answer: Yes, the R-squared value is smaller than 0.05, so we reject the null hypothesis and see that there is a significant difference in mean temperature.
 
 
 
