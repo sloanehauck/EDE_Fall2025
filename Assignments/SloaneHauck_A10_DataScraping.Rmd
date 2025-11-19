@@ -206,10 +206,12 @@ df_Cary$MaxDayUse <- as.numeric(df_Cary$MaxDayUse)
 
 ggplot(df_Cary, aes(x = Month, y = MaxDayUse, color = factor(Year), group = Year)) +
   geom_line() +
+  geom_smooth(method = 'loess')+
   labs(x = "Month", y = "Maximum Day Use (MGD)", color = "Year") 
  
 ggplot(df_Cary, aes(x = Date, y = MaxDayUse)) +
   geom_line() +
+  geom_smooth(method = 'loess')+
   labs(x = "Month", y = "Maximum Day Use (MGD)")  
 
 ```
